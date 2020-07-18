@@ -1,6 +1,6 @@
 {
   "name": "Nestted Landing",
-  #"private": true,
+  "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "1.0.0",
   "main": "index.js",
