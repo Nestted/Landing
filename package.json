@@ -40,4 +40,8 @@
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-hello-world#readme",
   "main": "gatsby-config.js",
   "author": ""
+},
+  "start": "next start -p $PORT",
+  "heroku-postbuild": "npm run build"
+
 }
