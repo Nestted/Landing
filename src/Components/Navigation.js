@@ -14,12 +14,21 @@ const Navigation = props => {
   return (
     <section class="top-nav">
       <div className="">
-        <img src={brain} alt="logo" style={{ height: "60px", width: "60px" , marginLeft: "20px"}} />
+        <img
+          src={brain}
+          alt="logo"
+          style={{ height: "60px", width: "60px", marginLeft: "20px" }}
+        />
         <img
           className="name"
           src={name}
           alt="logo"
-          style={{ height: "60px", width: "100px", marginLeft: "10px", marginRight: "10px"}}
+          style={{
+            height: "60px",
+            width: "100px",
+            marginLeft: "10px",
+            marginRight: "10px",
+          }}
         />
       </div>
       <input id="menu-toggle" type="checkbox" />
