@@ -22,7 +22,7 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-        <Helmet title="foo bar" defer={false} />
+        <Helmet title="Nestted" defer={false} />
 
         <Navigation key={this.state.nav} updated={this.update} />
         <Main />
