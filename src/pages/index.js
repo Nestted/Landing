@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Helmet from "react-helmet"
 import "../styles/styles.css"
 import Main from "../Components/Main"
 import About from "../Components/About"
@@ -21,6 +22,8 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
+        <Helmet title="foo bar" defer={false} />
+
         <Navigation key={this.state.nav} updated={this.update} />
         <Main />
         <Features />
