@@ -3,6 +3,7 @@ import family from "./famprofile.svg"
 import heart from "./Heartlock.svg"
 import Engagement from "./engagement.svg"
 import tribal from "./tribal.svg"
+import Nestt from "./2Nestt PRofile .gif"
 import ReactCardCarousel from "react-card-carousel"
 
 class Features extends Component {
@@ -55,7 +56,7 @@ class Features extends Component {
         <div className="desktop">
           <div className="desktop_view">
             <img
-              src={family}
+              src={Nestt}
               alt="mission"
               style={{ width: "230px", margin: "0 auto" }}
             />
