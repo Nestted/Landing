@@ -4,6 +4,7 @@ import heart from "./Heartlock.svg"
 import Engagement from "./engagement.svg"
 import tribal from "./tribal.svg"
 import Nestt from "./2Nestt PRofile .gif"
+import Saftey from "./Safety Accountability .gif"
 import ReactCardCarousel from "react-card-carousel"
 
 class Features extends Component {
@@ -75,7 +76,7 @@ class Features extends Component {
           </div>
           <div className="desktop_view">
             <img
-              src={heart}
+              src={Saftey}
               alt="values"
               style={{ width: "230px", margin: "0 auto" }}
             />
