@@ -29,8 +29,8 @@ class Values extends Component {
             }}
           >
             Nestted brings accountability, fun, faith, honor and security to
-            Social Media while helping users love their families a little more.
-            We focusing our attention on what matters the most….Family matters.
+            Social Media. We want to help people love their families a little more.
+            We focusing our attention on what matters the most…Family matters.
           </p>
         </div>
       </div>
