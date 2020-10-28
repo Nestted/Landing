@@ -22,8 +22,7 @@ class Vision extends Component {
           >
             Five years from now Nestted will be one of the top social media
             sites in the world by strengthening families, empowering
-            communities, promoting non-profits, community-orgs and enhancing
-            lifestyles.
+            communities and enhancing lifestyles.
           </p>
         </div>
       </div>
