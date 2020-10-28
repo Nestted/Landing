@@ -1,11 +1,12 @@
 import React, { Component } from "react"
 import mission from "./mission.svg"
+import Family from "./Family Mission1.svg"
 
 class Mission extends Component {
   render() {
     return (
       <div id="Mission" className="About">
-        <img src={mission} alt="mission" className="mission_image1" />
+        <img src={Family} alt="mission" className="mission_image1" />
 
         <h1 style={{ margin: "auto", fontSize: "4rem", paddingBottom: "20px" }}>
           Mission
