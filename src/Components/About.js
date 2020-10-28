@@ -18,10 +18,8 @@ class About extends Component {
               textAlign: "left"
             }}
           >
-            Our first priority is to strengthen families and empower
-            communities. We want to create an environment that cultivates the
-            relationships between individuals, their families, and their
-            locales.
+            We are all family members! Here at Nestted, our priority is to strengthen families. We want to create an environment that cultivates the
+            relationships between individuals and their families.
           </p>
         </div>
 
