@@ -18,9 +18,7 @@ class Mission extends Component {
               fontSize: "1.5rem",
             }}
           >
-            Our mission is to promote “family” and togetherness. We aim to
-            help nonprofits and community-orgs and build a platform for successful
-            outreach. We strive to enhance lifestyles with an innovative
+            Our mission is to promote healthy living and togetherness. We strive to enhance lifestyles with an innovative
             approach that results in happy lives as well as shape a better
             future.
           </p>
