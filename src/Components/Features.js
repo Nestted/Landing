@@ -71,7 +71,7 @@ class Features extends Component {
               }}
             >
               <br />
-              Individual profiles are linked together to create a manageable
+              The Nestt is a place where individual profiles are linked together to create a manageable
               family profile.
             </p>
           </div>
@@ -91,7 +91,7 @@ class Features extends Component {
               }}
             >
               <br />
-              Secure messaging that notify spouse or parent of interactions with
+              Nestted provides secure messaging that notifies the spouse or parent of interactions with
               others outside of the family.
             </p>
           </div>
@@ -111,7 +111,7 @@ class Features extends Component {
             >
               <br />
               <br />
-              Families chat and share their moments with the world.
+              Families create moments by posting their favorite memories and share them with the world.
             </p>
           </div>
         </div>
