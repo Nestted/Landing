@@ -8,16 +8,23 @@ class Join extends Component {
   const email = e.target.email.value;
   if (!email) return;
 
-  await fetch("https://script.google.com/macros/s/AKfycbxZVu-6VwIz4mkE9k6cAMyVBc4M5-SmM0p_JJlD5Q80WRvDrLA_TVYWPvu5JlpUfdmo/exec", {
+await fetch(
+  "https://script.google.com/macros/s/AKfycbxZVu-6VwIz4mkE9k6cAMyVBc4M5-SmM0p_JJlD5Q80WRvDrLA_TVYWPvu5JlpUfdmo/exec",
+  {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
+    mode: "no-cors", // 👈 critical for Google Scripts
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
       email: email,
       source: "nestted.com",
       page: window.location.pathname,
       user_agent: navigator.userAgent,
     }),
-  });
+  }
+);
+
 
   e.target.reset();
   alert("You're on the list 👀");
@@ -46,5 +53,6 @@ class Join extends Component {
 }
 
 export default Join
+
 
 
