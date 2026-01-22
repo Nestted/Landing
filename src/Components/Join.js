@@ -35,7 +35,7 @@ class Join extends Component {
               name="email"
               placeholder="Enter your email address"
             />
-            <button>Submit</button>{" "}
+            <button type="submit">Submit</button>
           </form>
         </div>
         <img className='name' src={name} alt="logo" style={{ height: "120px", width: "200px" , margin: '0 auto', marginTop: "10px"}} />
@@ -46,4 +46,5 @@ class Join extends Component {
 }
 
 export default Join
+
 
