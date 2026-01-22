@@ -35,37 +35,15 @@ await fetch(
       <div id="Join" className="Join">
         <h1 style={{ margin: "auto", fontSize: "3rem", paddingTop: "200px", marginBottom: "10px"}}>Join Today!</h1>
         <div className="form">
-<div>
+<form onSubmit={this.handleSubmit}>
   <input
     className="email"
     type="email"
     name="email"
     placeholder="Enter your email address"
-    ref={(el) => (this.emailInput = el)}
   />
-
-  <button
-    type="button"
-    onClick={() => {
-      if (!this.emailInput?.value) {
-        alert("Enter an email");
-        return;
-      }
-
-      this.handleSubmit({
-        preventDefault: () => {},
-        target: {
-          email: { value: this.emailInput.value },
-          reset: () => {
-            this.emailInput.value = "";
-          },
-        },
-      });
-    }}
-  >
-    Submit
-  </button>
-</div>
+  <button type="submit">Submit</button>
+</form>
 
         </div>
         <img className='name' src={name} alt="logo" style={{ height: "120px", width: "200px" , margin: '0 auto', marginTop: "10px"}} />
@@ -76,6 +54,7 @@ await fetch(
 }
 
 export default Join
+
 
 
 
