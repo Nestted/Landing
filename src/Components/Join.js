@@ -9,7 +9,7 @@ handleSubmit = async (e) => {
   if (!email) return;
 
   const endpoint =
-    "https://script.google.com/macros/s/AKfycbxToc3Z7ZJsH8OiCQIOHLBtoctBBZcRuYHwtuuhVyumZuL9Cb0EIbSXIuP2GXh4XZNI/exec";
+    "https://script.google.com/macros/s/AKfycbz4gLqiHwC3K7eOj97OJe2kM0_5qzyQV_ueeBW704P5IMHKr_oZnU5Uy5gacKhJWuM8/exec";
 
   const url = new URL(endpoint);
   url.searchParams.set("email", email);
