@@ -1,13 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Nestted`,
-    description: `A private space for families and households to stay connected.`,
+    title: `Nestted | Social media for families`,
+    description: `Nestted helps families share moments, stay connected, and keep accountability built in.`,
     author: `Nestted`,
     siteUrl: `https://nestted.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
-
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://nestted.com`,
+        sitemap: `https://nestted.com/sitemap.xml`,
+        policy: [
+          {
+            userAgent: `*`,
+            allow: `/`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,10 +31,10 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // we’ll add this next
+        icon: `src/images/icon.png`,
       },
     },
-
     `gatsby-plugin-offline`,
   ],
 }
+
