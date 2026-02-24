@@ -2,31 +2,37 @@ import React, { Component } from "react";
 import name from "./name.svg";
 
 class Join extends Component {
-  handleSubmit = async (e) => {
-    e.preventDefault();
+handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const email = e.target.email.value;
-    if (!email) return;
+  const email = e.target.email.value;
+  if (!email) return;
 
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbxZVu-6VwIz4mkE9k6cAMyVBc4M5-SmM0p_JJlD5Q80WRvDrLA_TVYWPvu5JlpUfdmo/exec",
-      {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-          email,
-          source: "nestted.com",
-          page: window.location.pathname,
-          user_agent: navigator.userAgent,
-        }),
-      }
-    );
+  const endpoint =
+    "https://script.google.com/macros/s/AKfycbxToc3Z7ZJsH8OiCQIOHLBtoctBBZcRuYHwtuuhVyumZuL9Cb0EIbSXIuP2GXh4XZNI/exec";
 
-    e.target.reset();
-  };
+  const url = new URL(endpoint);
+  url.searchParams.set("email", email);
+  url.searchParams.set("source", "nestted.com");
+  url.searchParams.set("page", window.location.pathname);
+  url.searchParams.set("ts", Date.now().toString());
+
+    // Fire-and-forget (email already confirmed working)
+  fetch(url.toString(), { method: "GET", mode: "no-cors" });
+
+  // UX: success message
+  if (this.messageRef) {
+    this.messageRef.innerText = "✅ You’re on the list.";
+    this.messageRef.style.color = "#9e1c99";
+  }
+
+  e.target.reset();
+};
+
+
+
+messageRef = null;
+
 
   render() {
     return (
@@ -45,6 +51,11 @@ class Join extends Component {
               required
             />
             <button type="submit">Submit</button>
+            <p
+  ref={(el) => (this.messageRef = el)}
+  style={{ marginTop: 12, fontWeight: 500 }}
+></p>
+
           </form>
         </div>
 

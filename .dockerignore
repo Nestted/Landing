@@ -1,0 +1,18 @@
+# dependencies / build artifacts
+node_modules
+.cache
+public
+
+# OS / editor noise
+.DS_Store
+.idea
+.vscode
+
+# git
+.git
+.gitignore
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
